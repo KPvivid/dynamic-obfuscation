@@ -1,17 +1,21 @@
 #include <iostream>
 
-// Define a function to be obfuscated
-void secretFunction() {
-    std::cout << "This is a secret function!\n";
+void first() {
+    std::cout << "First function\n";
 }
 
-// Main function
+void second() {
+    std::cout << "Second function\n";
+}
+
+void third() {
+    std::cout << "Third function\n";
+}
+
 int main() {
-    std::cout << "Welcome to the program!\n";
+    first();
+    second();
+    third();
 
-    // Call the secret function
-    secretFunction();
-
-    std::cout << "Program exiting...\n";
     return 0;
 }
